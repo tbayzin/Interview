@@ -1,0 +1,4 @@
+Lombok: Fazladan kod yazımını azaltmak için kullanılan, getter-setterları kısaltan bir kütüphane.
+Swagger: API de ki endpointleri rahat olarak göstermek, açıklamak için kullanılır.
+Dev Tools:  Hot reload için bir kütüphane. Projede ön yüz olmadığı için gereği yoktur.
+

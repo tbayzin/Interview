@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProjectService {
+public class UserService {
     private final UserRepository repository;
 
     public User save(User user) {
