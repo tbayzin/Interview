@@ -1,6 +1,5 @@
 package com.example.mulakat.controller;
 
-import com.example.mulakat.dao.UserRepository;
 import com.example.mulakat.model.User;
 import com.example.mulakat.service.UserService;
 import lombok.RequiredArgsConstructor;

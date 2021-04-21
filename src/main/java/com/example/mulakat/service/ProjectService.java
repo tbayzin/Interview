@@ -1,10 +1,8 @@
 package com.example.mulakat.service;
 
 
-import com.example.mulakat.dao.ProjectRepository;
-import com.example.mulakat.dao.UserRepository;
+import com.example.mulakat.repository.ProjectRepository;
 import com.example.mulakat.model.Project;
-import com.example.mulakat.model.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

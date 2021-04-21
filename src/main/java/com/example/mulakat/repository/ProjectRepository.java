@@ -1,4 +1,4 @@
-package com.example.mulakat.dao;
+package com.example.mulakat.repository;
 
 
 import com.example.mulakat.model.Project;
