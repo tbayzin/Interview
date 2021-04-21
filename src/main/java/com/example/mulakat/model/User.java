@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,9 +27,9 @@ public class User {
     @JoinTable(name = "user_project",
             joinColumns = {
                     @JoinColumn(name = "user_id", referencedColumnName = "id",
-                            nullable = false, updatable = false)},
+                            nullable = false, updatable = true)},
             inverseJoinColumns = {
                     @JoinColumn(name = "project_id", referencedColumnName = "id",
                             nullable = false, updatable = false)})
-    private Set<Project> projects = new HashSet<>();
+    private List<Project> projects;
 }

@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -20,6 +21,9 @@ public class Project {
     private   Integer id;
     private String name;
 
-    @ManyToMany(mappedBy = "projects", fetch = FetchType.LAZY)
-    private Set<User> users = new HashSet<>();
+
+    @ManyToMany(mappedBy = "projects", fetch = FetchType.EAGER)
+    private List<User> users;
+
+
 }
