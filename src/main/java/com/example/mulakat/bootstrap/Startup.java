@@ -34,6 +34,8 @@ public class Startup implements CommandLineRunner {
         projectService.save(project2);
         projectService.save(project3);
 
+
+
         // https://attacomsian.com/blog/spring-data-jpa-many-to-many-mapping
 
     }
