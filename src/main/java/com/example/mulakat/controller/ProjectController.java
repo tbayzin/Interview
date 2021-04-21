@@ -35,4 +35,9 @@ public class ProjectController {
         return projectService.getProjectByID(id);
     }
 
+/*
+    @ResponseStatus(HttpStatus.TOO_MANY_REQUESTS)
+    @GetMapping("/{id}")
+    public Double getProjectSum ()
+*/
 }
