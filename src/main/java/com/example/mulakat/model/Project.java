@@ -18,7 +18,7 @@ import java.util.Set;
 public class Project {
     @Id
     @GeneratedValue
-    private   Integer id;
+    private Integer id;
     private String name;
 
 
