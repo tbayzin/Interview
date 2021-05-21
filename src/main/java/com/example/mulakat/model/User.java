@@ -33,3 +33,15 @@ public class User {
                             nullable = false, updatable = false)})
     private List<Project> projects;
 }
+
+
+/*
+
+@Query(
+  value = "Select SUM(u.salary), pr.name from user_project p left join user u on u.id=p.user_id
+left join project pr on p.project_id = pr.id
+group by pr.name;",
+  nativeQuery = true)
+Collection<Project> getProjectSums();
+
+ */
