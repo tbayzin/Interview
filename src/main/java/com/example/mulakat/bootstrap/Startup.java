@@ -21,6 +21,12 @@ public class Startup implements CommandLineRunner {
      /*   User user1 = User.builder().id(1).name("Tarik").surname("Bin Ziyad").salary(6000d).build();
         User user3 = User.builder().id(3).name("Osman").surname("Nuri").salary(4000d).build();*/
 
+/*
+        SELECT SUM(project_id)
+                FROM user_project;
+*/
+
+
         User user1 = new User();
         user1.setName("Tarık");
         user1.setSurname("Kral");
