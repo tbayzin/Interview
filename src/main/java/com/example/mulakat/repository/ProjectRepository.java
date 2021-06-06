@@ -13,10 +13,7 @@ import java.util.List;
 public interface ProjectRepository extends JpaRepository<Project,  Integer> {
     Project getProjectById(Integer id);
 
-    @Query("Select SUM(u.salary), pr.name from user_project p left join user u on u.id=p.user_id " +
-            "            left join project pr on p.project_id = pr.id\n" +
-            "            group by pr.name")
-    List<Project> findBySalarySum();
+
     //  Collection<Project> getProjectSums();
 
 }

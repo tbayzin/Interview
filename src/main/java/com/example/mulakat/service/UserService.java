@@ -1,5 +1,6 @@
 package com.example.mulakat.service;
 
+import com.example.mulakat.model.Project;
 import com.example.mulakat.repository.UserRepository;
 import com.example.mulakat.model.User;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +12,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository repository;
+
+
+    public Project findBySalarySum(Integer id) {
+        return repository.getProjectById(id);
+    }
 
     public User save(User user) {
         return repository.save(user);
