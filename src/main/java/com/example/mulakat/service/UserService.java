@@ -14,9 +14,11 @@ public class UserService {
     private final UserRepository repository;
 
 
-    public Project findBySalarySum(Integer id) {
+ /*   public Project findBySalarySum(Integer id) {
         return repository.getProjectById(id);
     }
+    */
+
 
     public User save(User user) {
         return repository.save(user);
@@ -46,5 +48,12 @@ public class UserService {
 
     public void deleteUserById(Integer id) {
         repository.deleteById(id);
+    }
+
+
+        // Sum according to sallaries
+    public List<User> sumAllSalaries() {
+
+        return  repository.sumAllSalaries();
     }
 }

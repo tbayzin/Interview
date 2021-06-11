@@ -44,6 +44,18 @@ public class UserController {
         return userService.getUserById(id);
     }
 
+
+
+
+    @ResponseStatus(HttpStatus.TOO_MANY_REQUESTS)
+    @GetMapping("/listProjectSums")
+    public List<User> listProjectSums () {
+
+
+        return  userService.sumAllSalaries();
+    }
+
+
 }
 
 
