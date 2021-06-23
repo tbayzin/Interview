@@ -47,10 +47,9 @@ public class UserController {
 
 
 
-    @ResponseStatus(HttpStatus.TOO_MANY_REQUESTS)
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping("/listProjectSums")
     public List<User> listProjectSums () {
-
 
         return  userService.sumAllSalaries();
     }

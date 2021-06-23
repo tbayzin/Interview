@@ -39,15 +39,6 @@ public class ProjectController {
 
 
 
-    // Working on
-    @ResponseStatus(HttpStatus.TOO_MANY_REQUESTS)
-    @GetMapping("/listProjectSums")
-    public Double listProjectSums (@PathVariable Integer id) {
-return  54.4;
-    }
-
-
-
 
 }
 
