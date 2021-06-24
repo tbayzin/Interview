@@ -46,7 +46,7 @@ public class UserController {
 
 
 
-
+    // burdaki dönüş değiştirilecek
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/listProjectSums")
     public List<User> listProjectSums () {
