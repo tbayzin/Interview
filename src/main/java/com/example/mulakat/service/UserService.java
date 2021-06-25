@@ -1,5 +1,6 @@
 package com.example.mulakat.service;
 
+import com.example.mulakat.dto.ProjectSumsDTO;
 import com.example.mulakat.model.Project;
 import com.example.mulakat.repository.UserRepository;
 import com.example.mulakat.model.User;
@@ -52,7 +53,7 @@ public class UserService {
 
 
         // Sum according to sallaries
-    public List<User> sumAllSalaries() {
+    public List<ProjectSumsDTO> sumAllSalaries() {
 
         return  repository.sumAllSalaries();
     }

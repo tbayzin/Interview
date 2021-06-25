@@ -1,5 +1,6 @@
 package com.example.mulakat.controller;
 
+import com.example.mulakat.dto.ProjectSumsDTO;
 import com.example.mulakat.model.User;
 import com.example.mulakat.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -49,7 +50,7 @@ public class UserController {
     // burdaki dönüş değiştirilecek
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/listProjectSums")
-    public List<User> listProjectSums () {
+    public List<ProjectSumsDTO> listProjectSums () {
 
         return  userService.sumAllSalaries();
     }
