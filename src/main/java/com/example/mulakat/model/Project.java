@@ -1,5 +1,7 @@
 package com.example.mulakat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,6 +24,7 @@ public class Project {
     private String name;
 
 
+    @JsonBackReference
     @ManyToMany(mappedBy = "projects", fetch = FetchType.EAGER)
     private List<User> users;
 

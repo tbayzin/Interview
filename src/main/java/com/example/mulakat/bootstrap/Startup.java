@@ -49,7 +49,6 @@ public class Startup implements CommandLineRunner {
         service.save(user3);
 
        /* Project project1 = Project.builder().id(1).name("Cebeli Tarik Projesi").build();
-
         Project project3 = Project.builder().id(3).name("Plevne Savunma si Projesi").build();*/
 
         Project projectNew = new Project();
@@ -64,7 +63,7 @@ public class Startup implements CommandLineRunner {
 
 
 
-            // Userların projelere eklendigi kisim
+        // Userların projelere eklendigi kisim
         if(user1.getProjects()!=null){
             user1.getProjects().add(projectNew);
         }

@@ -1,5 +1,7 @@
 package com.example.mulakat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,8 +24,9 @@ public class User {
     private   Integer id;
     private   String name;
     private   String surname;
-    private Double salary;
+    private  Double salary;
 
+    @JsonManagedReference
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
     @JoinTable(name = "user_project",
             joinColumns = {

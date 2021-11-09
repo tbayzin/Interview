@@ -52,9 +52,5 @@ public class UserService {
     }
 
 
-        // Sum according to sallaries
-    public List<ProjectSumsDTO> sumAllSalaries() {
 
-        return  repository.sumAllSalaries();
-    }
 }

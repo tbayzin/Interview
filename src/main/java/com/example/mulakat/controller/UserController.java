@@ -46,16 +46,6 @@ public class UserController {
     }
 
 
-
-    // burdaki dönüş değiştirilecek
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/listProjectSums")
-    public List<ProjectSumsDTO> listProjectSums () {
-
-        return  userService.sumAllSalaries();
-    }
-
-
 }
 
 

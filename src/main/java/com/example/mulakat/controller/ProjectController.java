@@ -1,5 +1,6 @@
 package com.example.mulakat.controller;
 
+import com.example.mulakat.dto.ProjectSumsDTO;
 import com.example.mulakat.model.Project;
 import com.example.mulakat.model.User;
 import com.example.mulakat.service.ProjectService;
@@ -37,6 +38,16 @@ public class ProjectController {
         return projectService.getProjectByID(id);
     }
 
+
+
+    /*
+    // burdaki dönüş değiştirilecek
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/listProjectSums")
+    public List<Project> listProjectSums () {
+        return  projectService.sumAllSalaries();
+    }
+     */
 
 
 

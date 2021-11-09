@@ -1,6 +1,7 @@
 package com.example.mulakat.service;
 
 
+import com.example.mulakat.model.User;
 import com.example.mulakat.repository.ProjectRepository;
 import com.example.mulakat.model.Project;
 import lombok.RequiredArgsConstructor;
@@ -24,5 +25,12 @@ public class ProjectService {
     public List<Project> getAllProjects() {
         return projectRrepository.findAll();
     }
+
+    /*
+    // Sum according to sallaries
+    public List<Project> sumAllSalaries() {
+        return  projectRrepository.sumAllSalaries();
+    }
+     */
 
 }
