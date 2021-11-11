@@ -33,6 +33,8 @@ public class UserService {
         return repository.findAll();
     }
 
+    public List<User> findByName() {return repository.findByName("name"); }
+
     public User updateUser(Integer id, User user) {
         User savedUser = repository.getUserById(id);
 
