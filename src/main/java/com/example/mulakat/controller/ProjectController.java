@@ -25,11 +25,7 @@ public class ProjectController {
         return projectService.save(project);
     }
 
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping()
-    public List<Project> getAll() {
-        return projectService.getAllProjects();
-    }
+
 
 
     @ResponseStatus(HttpStatus.OK)
@@ -37,6 +33,9 @@ public class ProjectController {
     public Project getProjectById (@PathVariable Integer id) {
         return projectService.getProjectByID(id);
     }
+
+
+
 
 
 

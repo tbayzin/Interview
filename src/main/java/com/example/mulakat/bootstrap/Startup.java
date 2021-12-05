@@ -29,7 +29,7 @@ public class Startup implements CommandLineRunner {
 
         User user1 = new User();
         user1.setName("Tarık");
-        user1.setSurname("Kral");
+        user1.setSurname("Dursun");
         user1.setSalary(2500.00);
 
         User user2 = new User();
@@ -42,11 +42,19 @@ public class Startup implements CommandLineRunner {
         user3.setSurname("Sahin");
         user3.setSalary(7500.00);
 
+        User user4 = new User();
+        user4.setName("Murat");
+        user4.setSurname("Yıldız");
+        user4.setSalary(9500.00);
+
+
 
 
         service.save(user1);
         service.save(user2);
         service.save(user3);
+        service.save(user4);
+
 
        /* Project project1 = Project.builder().id(1).name("Cebeli Tarik Projesi").build();
         Project project3 = Project.builder().id(3).name("Plevne Savunma si Projesi").build();*/
@@ -84,6 +92,16 @@ public class Startup implements CommandLineRunner {
             user2.setProjects(projectList);
         }
         service.save(user2);
+
+        if(user4.getProjects()!=null){
+            user4.getProjects().add(projectNew);
+        }
+        else {
+            List<Project> projectList = new ArrayList<>();
+            projectList.add(projectNew);
+            user4.setProjects(projectList);
+        }
+        service.save(user4);
 
         if(user3.getProjects()!=null){
             user3.getProjects().add(projectNew2);

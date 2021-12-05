@@ -28,11 +28,7 @@ public class UserController {
         return userService.updateUser(id, user);
     }
 
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping()
-    public List<User> getAll() {
-        return userService.getAllUsers();
-    }
+
 
     @ResponseStatus(HttpStatus.OK)
     @DeleteMapping("/{id}")
@@ -46,11 +42,20 @@ public class UserController {
         return userService.getUserById(id);
     }
 
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/{}")
+    public User highestSalary() {
+        return userService.highestSalary;
+    }
+
+    /*
     @ResponseStatus(HttpStatus.OK)
     @RequestMapping(value = "/{name}")
     public List<User> findByName(@PathVariable String name) {
         return userService.findByName(name);
     }
+     */
 
 
 }

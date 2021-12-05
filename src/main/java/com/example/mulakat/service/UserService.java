@@ -15,11 +15,15 @@ public class UserService {
     private final UserRepository repository;
 
 
+    // Bu metod düzeltilecek
+    public User highestSalary() {
+        return repository.getUserById(id);
+    }
+
  /*   public Project findBySalarySum(Integer id) {
         return repository.getProjectById(id);
     }
     */
-
 
     public User save(User user) {
         return repository.save(user);
@@ -29,11 +33,15 @@ public class UserService {
         return repository.getUserById(id);
     }
 
+    /*
     public List<User> getAllUsers() {
         return repository.findAll();
     }
+     */
 
-    public List<User> findByName() {return repository.findByName("name"); }
+    public List<User> findByName() {
+        return repository.findByName("name");
+    }
 
     public User updateUser(Integer id, User user) {
         User savedUser = repository.getUserById(id);
@@ -52,7 +60,6 @@ public class UserService {
     public void deleteUserById(Integer id) {
         repository.deleteById(id);
     }
-
 
 
 }

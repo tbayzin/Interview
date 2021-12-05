@@ -22,9 +22,12 @@ public class ProjectService {
         return projectRrepository.getProjectById(id);
     }
 
+    /*
     public List<Project> getAllProjects() {
         return projectRrepository.findAll();
     }
+
+     */
 
     /*
     // Sum according to sallaries
